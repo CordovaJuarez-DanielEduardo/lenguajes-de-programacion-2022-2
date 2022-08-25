@@ -1,0 +1,20 @@
+#lang plait
+
+(define-type ArithC
+  (numC [a])
+  (plusC [ArithC a]
+        [ArithC b])
+  (restC [ArithC a]
+         [ArithC b])
+  (multC [ArithC a]
+        [ArithC b])
+  (neg [ArithC a])
+  (boolTrue #t)
+  (boolFalse #f)
+  (or [ArithC a]
+      [ArithC b])
+  (and [ArithC a]
+       [ArithC b])
+  (not [ArithC a]))
+
+;(provide (all-defined-out))
