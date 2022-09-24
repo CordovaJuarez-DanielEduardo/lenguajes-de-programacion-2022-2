@@ -1,0 +1,8 @@
+#lang plait
+
+(define-type ExprS : )
+
+(define-type S-Expr : ExprS
+  (<num> : [])
+  (<string> : [])
+  (<>))
